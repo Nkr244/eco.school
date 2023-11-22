@@ -1,0 +1,35 @@
+.principles {
+  margin-bottom: 60px;
+  .container {
+    padding: 40px 0;
+    border-top: 1px solid rgba(0, 0, 0, .2);
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+  }
+  &-left {
+    flex-basis: 50%;
+    padding-right: 40px;
+    border-right: 1px solid rgba(0, 0, 0, .2);
+    h4 {
+      margin-bottom: 10px;
+    }
+    h3 {
+      margin-bottom: 30px;
+      max-width: 315px;
+    }
+    p {
+      font-size: 18px;
+      color: $gray-text;
+      margin-bottom: 30px;
+    }
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &-right {
+    flex-basis: 50%;
+    padding-left: 20px;
+    h4 {
+      margin-bottom: 45px;
+    }
+  }
+}

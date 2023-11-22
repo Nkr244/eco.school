@@ -1,0 +1,40 @@
+.check-list {
+  margin-bottom: 60px;
+  h4 {
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    margin-bottom: 40px;
+  }
+  &-content {
+    gap: 30px;
+  }
+  &-block {
+    flex-basis: 50%;
+
+    &-item {
+      margin-bottom: 30px;
+      padding-left: 50px;
+      font-size: 18px;
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        background: url("images/check-list-star.svg") no-repeat center;
+        background-size: contain;
+        width: 28px;
+        height: 28px;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+&-item-title {
+  margin-bottom: 5px;
+}
+  &-item-text {
+    color: $gray-text;
+    max-width: 375px;
+  }
+}

@@ -1,0 +1,22 @@
+.main {
+  margin-bottom: 205px;
+  &-content {
+    max-width: 885px;
+    h1, h2 {
+      margin-bottom: 25px;
+    }
+    h2 {
+      font-weight: 400;
+      font-size: 21px;
+      line-height: 33.6px;
+    }
+    .main-address {
+      font-size: 18px;
+      line-height: 28.8px;
+      margin-bottom: 45px;
+      span {
+        color: $gray;
+      }
+    }
+  }
+}

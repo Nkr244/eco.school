@@ -1,0 +1,9 @@
+.gallery {
+  &-content {
+    flex-wrap: wrap;
+    gap: 5px;
+    img {
+      flex-basis: calc(33.3333% - 5px);
+    }
+  }
+}
