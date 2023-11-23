@@ -737,6 +737,29 @@ h4 {
   color: #000000;
 }
 
+@media screen and (max-width: 1076px) {
+  .header-all {
+    margin-bottom: 100px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .information-content {
+    flex-direction: column;
+  }
+  .materials .container,
+  .documents .container,
+  .information .container {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  .materials .container .principles-left,
+  .documents .container .principles-left,
+  .information .container .principles-left {
+    margin-bottom: 0;
+  }
+  .materials .container {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+}
 .footer {
   position: relative;
   padding: 50px 0 35px 0;
