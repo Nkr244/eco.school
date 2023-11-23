@@ -9,6 +9,14 @@
       color: $gray;
     }
   }
+  &-all {
+    padding-top: 50px;
+    margin-bottom: 560px;
+  }
+  &-logo-big {
+    max-width: 410px;
+    margin: 0 auto;
+  }
 }
 @media screen and (max-width: 550px) {
   .header {

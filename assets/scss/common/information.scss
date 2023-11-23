@@ -1,0 +1,180 @@
+.container-abs {
+  img {
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+.wrapper-information {
+  .main-information {
+    h1 {
+      font-weight: normal;
+    }
+  }
+
+  .container-abs {
+    .ruler {
+      width: 126px;
+      height: 143px;
+      top: 100px;
+      left: -95px;
+    }
+
+    .male {
+      width: 165px;
+      height: 170px;
+      top: 237px;
+      left: 300px;
+      transform: rotate(-30deg);
+    }
+
+    .female {
+      width: 365px;
+      height: 200px;
+      left: 580px;
+    }
+
+    .lattice {
+      width: 161px;
+      height: 120px;
+      left: 150px;
+      top: 480px;
+    }
+
+    .pink-drop {
+      width: 35px;
+      height: 25px;
+      top: 56px;
+      left: 100px;
+    }
+
+    .blue-drop {
+      width: 39px;
+      height: 35px;
+      top: 290px;
+      left: -90px;
+    }
+
+    .pink-pencil {
+      width: 165px;
+      height: 205px;
+      top: 136px;
+      left: 120px;
+    }
+
+    .yellow-pencil {
+      width: 203px;
+      height: 203px;
+      top: 170px;
+      right: 280px;
+    }
+
+    .blue-pencil {
+      width: 150px;
+      height: 130px;
+      top: 350px;
+      right: -60px;
+    }
+
+    .blue-fish {
+      left: -120px;
+      top: 400px;
+      width: 180px;
+      height: 135px;
+    }
+
+    .pink-drops {
+      width: 50px;
+      height: 50px;
+      top: 472px;
+      left: 420px;
+    }
+
+    .yellow-drops {
+      width: 40px;
+      height: 50px;
+      top: 260px;
+      right: 200px;
+    }
+
+    .green-caterpillar {
+      width: 300px;
+      height: 115px;
+      left: -16px;
+      top: 660px;
+    }
+
+    .sharpener {
+      width: 130px;
+      height: 130px;
+      top: 80px;
+      right: -40px;
+    }
+
+    .foliage {
+      width: 170px;
+      height: 135px;
+      top: 570px;
+      right: 5px;
+    }
+  }
+
+
+  .principles {
+    margin-bottom: 0;
+  }
+
+  .materials {
+    margin-bottom: 30px;
+
+    .principles-content {
+      h3 {
+        margin-bottom: 20px;
+      }
+
+      p {
+        color: $gray-text;
+        margin-bottom: 20px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .information,
+  .documents {
+    .container {
+      border-bottom: none;
+
+      h3 {
+        margin-bottom: 20px;
+      }
+
+      ul {
+        list-style: none;
+
+        li {
+          margin-bottom: 20px;
+
+          a {
+            text-decoration: none;
+            color: $black;
+            font-size: 18px;
+          }
+        }
+      }
+
+      .information-list {
+        span {
+          color: $gray-text;
+        }
+
+        p {
+          color: $black;
+        }
+      }
+    }
+  }
+}

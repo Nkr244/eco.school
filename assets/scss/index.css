@@ -214,6 +214,14 @@ h4 {
 .header-contacts a {
   color: #999999;
 }
+.header-all {
+  padding-top: 50px;
+  margin-bottom: 560px;
+}
+.header-logo-big {
+  max-width: 410px;
+  margin: 0 auto;
+}
 
 @media screen and (max-width: 550px) {
   .header .container {
@@ -241,6 +249,9 @@ h4 {
 }
 .main-content .main-address span {
   color: #999999;
+}
+.main-information {
+  margin-bottom: 140px;
 }
 
 .principles {
@@ -581,6 +592,151 @@ h4 {
     font-size: 20px;
   }
 }
+.container-abs img {
+  position: absolute;
+  z-index: -1;
+}
+
+.wrapper-information .main-information h1 {
+  font-weight: normal;
+}
+.wrapper-information .container-abs .ruler {
+  width: 126px;
+  height: 143px;
+  top: 100px;
+  left: -95px;
+}
+.wrapper-information .container-abs .male {
+  width: 165px;
+  height: 170px;
+  top: 237px;
+  left: 300px;
+  transform: rotate(-30deg);
+}
+.wrapper-information .container-abs .female {
+  width: 365px;
+  height: 200px;
+  left: 580px;
+}
+.wrapper-information .container-abs .lattice {
+  width: 161px;
+  height: 120px;
+  left: 150px;
+  top: 480px;
+}
+.wrapper-information .container-abs .pink-drop {
+  width: 35px;
+  height: 25px;
+  top: 56px;
+  left: 100px;
+}
+.wrapper-information .container-abs .blue-drop {
+  width: 39px;
+  height: 35px;
+  top: 290px;
+  left: -90px;
+}
+.wrapper-information .container-abs .pink-pencil {
+  width: 165px;
+  height: 205px;
+  top: 136px;
+  left: 120px;
+}
+.wrapper-information .container-abs .yellow-pencil {
+  width: 203px;
+  height: 203px;
+  top: 170px;
+  right: 280px;
+}
+.wrapper-information .container-abs .blue-pencil {
+  width: 150px;
+  height: 130px;
+  top: 350px;
+  right: -60px;
+}
+.wrapper-information .container-abs .blue-fish {
+  left: -120px;
+  top: 400px;
+  width: 180px;
+  height: 135px;
+}
+.wrapper-information .container-abs .pink-drops {
+  width: 50px;
+  height: 50px;
+  top: 472px;
+  left: 420px;
+}
+.wrapper-information .container-abs .yellow-drops {
+  width: 40px;
+  height: 50px;
+  top: 260px;
+  right: 200px;
+}
+.wrapper-information .container-abs .green-caterpillar {
+  width: 300px;
+  height: 115px;
+  left: -16px;
+  top: 660px;
+}
+.wrapper-information .container-abs .sharpener {
+  width: 130px;
+  height: 130px;
+  top: 80px;
+  right: -40px;
+}
+.wrapper-information .container-abs .foliage {
+  width: 170px;
+  height: 135px;
+  top: 570px;
+  right: 5px;
+}
+.wrapper-information .principles {
+  margin-bottom: 0;
+}
+.wrapper-information .materials {
+  margin-bottom: 30px;
+}
+.wrapper-information .materials .principles-content h3 {
+  margin-bottom: 20px;
+}
+.wrapper-information .materials .principles-content p {
+  color: #626262;
+  margin-bottom: 20px;
+}
+.wrapper-information .materials .principles-content p:last-child {
+  margin-bottom: 0;
+}
+.wrapper-information .information .container,
+.wrapper-information .documents .container {
+  border-bottom: none;
+}
+.wrapper-information .information .container h3,
+.wrapper-information .documents .container h3 {
+  margin-bottom: 20px;
+}
+.wrapper-information .information .container ul,
+.wrapper-information .documents .container ul {
+  list-style: none;
+}
+.wrapper-information .information .container ul li,
+.wrapper-information .documents .container ul li {
+  margin-bottom: 20px;
+}
+.wrapper-information .information .container ul li a,
+.wrapper-information .documents .container ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+}
+.wrapper-information .information .container .information-list span,
+.wrapper-information .documents .container .information-list span {
+  color: #626262;
+}
+.wrapper-information .information .container .information-list p,
+.wrapper-information .documents .container .information-list p {
+  color: #000000;
+}
+
 .footer {
   position: relative;
   padding: 50px 0 35px 0;
@@ -643,6 +799,45 @@ h4 {
   right: 145px;
   width: 75px;
   height: 75px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    margin-bottom: 50px;
+  }
+  .footer .links {
+    gap: 20px;
+  }
+  .footer-links {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-links ul {
+    flex-direction: column;
+    flex-basis: 50%;
+  }
+  .footer-images .blue-line {
+    left: 0;
+  }
+  .footer-images .orange-star {
+    right: 0;
+  }
+  .footer-images .ok-orange {
+    bottom: 0;
+  }
+  .footer-images .footer-d {
+    bottom: 210px;
+  }
+  .footer-images .pink-ellipse {
+    bottom: 150px;
+    right: 221px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .footer-links {
+    flex-direction: column;
+    font-size: 14px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
