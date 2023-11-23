@@ -10,6 +10,18 @@
 </head>
 <body>
 <div class="wrapper">
+    <div class="container-abs">
+        <img class="blue-star" src="assets/images/blue-star.svg" alt="">
+        <img class="male" src="assets/images/male.svg" alt="">
+        <img class="loop" src="assets/images/loop.svg" alt="">
+        <img class="D" src="assets/images/D.svg" alt="">
+        <img class="ruler" src="assets/images/ruler.svg" alt="">
+        <img class="five" src="assets/images/five.svg" alt="">
+        <img class="female" src="assets/images/female.svg" alt="">
+        <img class="female-left" src="assets/images/female-left.svg" alt="">
+        <img class="female-right" src="assets/images/female-right.svg" alt="">
+        <img class="lattice" src="assets/images/lattice.svg" alt="">
+    </div>
     <section class="header">
         <div class="container d-flex jc-sb align-center">
             <div class="header-logo">
@@ -40,7 +52,7 @@
     </section>
     <section class="principles">
         <div class="container">
-            <div class="d-flex jc-sb">
+            <div class="principles-content d-flex jc-sb">
                 <div class="principles-left">
                     <h4>КОНЦЕПЦИЯ</h4>
                     <h3>Мы избавились от стереотипов образования</h3>
@@ -79,7 +91,7 @@
                             Гибкий график занятий
                         </p>
                         <p class="check-list-item-text">
-                            2 раза в неделю по 3 часа или 3 раза  в неделю по 2 часа; первая или вторая  половина дня
+                            2 раза в неделю по 3 часа или 3 раза в неделю по 2 часа; первая или вторая половина дня
                         </p>
                     </div>
                     <div class="check-list-block-item">
@@ -121,7 +133,7 @@
                             Отличная локация
                         </p>
                         <p class="check-list-item-text">
-                            Центр города, рядом парк и озеро, бесплатная  парковка
+                            Центр города, рядом парк и озеро, бесплатная парковка
                         </p>
                     </div>
                     <div class="check-list-block-item">
@@ -138,7 +150,7 @@
         </div>
     </section>
     <section class="gallery">
-        <div class="gallery-content d-flex jc-sb">
+        <div class="gallery-content d-flex">
             <img src="assets/images/gallery-1.jpg" alt="">
             <img src="assets/images/gallery-2.jpg" alt="">
             <img src="assets/images/gallery-3.jpg" alt="">
@@ -148,8 +160,111 @@
         </div>
     </section>
     <section class="program">
-
+        <div class="container">
+            <h4>ПРОГРАММА</h4>
+            <h3>Мы учим детей базовым школьным навыкам, английскому языку, развиваем их творческие и музыкальные
+                способности</h3>
+            <img src="assets/images/program-image.svg" alt="">
+        </div>
     </section>
+    <section class="form-sign-up">
+        <div class="container">
+            <div class="form-sign-up-content">
+                <h3>Записаться</h3>
+                <p class="sub-title">
+                    Записаться на бесплатное пробное занятие или задать любой вопрос об Экошколе можно через эту форму
+                </p>
+                <form>
+                    <div class="form-up d-flex">
+                        <div class="form-item">
+                            <label class="d-flex flex-column">
+                                <p>Филиал Экошколы</p>
+                                <div class="d-flex">
+                                    <input id="radio1" type="radio" name="customRadio">
+                                    <label class="title-radio" for="radio1">Парк «Юность»</label>
+                                    <input id="radio2" type="radio" name="customRadio">
+                                    <label class="title-radio" for="radio2">г. Гурьевск</label>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="form-item">
+                            <label class="d-flex flex-column">
+                                <p>Возраст ребенка</p>
+                                <div class="form-item-content d-flex">
+                                    <input id="age" type="number" name="age">
+                                    <span>лет</span>
+                                    </input>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-middle d-flex">
+                        <div class="form-item">
+                            <label class="d-flex flex-column">
+                                <p>Ваше имя</p>
+                                <div class="d-flex">
+                                    <input id="name" type="text" name="name">
+                                </div>
+                            </label>
+                        </div>
+                        <div class="form-item">
+                            <label class="d-flex flex-column">
+                                <p>Ваш номер телефона</p>
+                                <div class="d-flex">
+                                    <input id="tel" type="tel" name="tel">
+                                    <span class="tel">+7</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-bottom ">
+                        <div class="form-item d-flex">
+                            <input id="checkbox" type="checkbox" name="checkbox">
+                            <label for="checkbox" class="form-checkbox"></label>
+                            <label class="checkbox-link" for="checkbox">Я соглашаюсь с <a href="#">Политикой обработки персональных данных</a></label>
+                            <a href="#" class="btn">ОТПРАВИТЬ</a>
+                        </div>
+
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="footer d-flex flex-column align-center">
+        <img class="footer-logo" src="assets/images/header-logo.svg" alt="">
+        <ul class="contacts d-flex">
+            <li class="d-flex flex-column">
+                <span>Вконтакте</span>
+                <a href="#">ekoshkola_ru</a>
+            </li>
+            <li class="d-flex flex-column">
+                <span>Телефон</span>
+                <a href="#">+7 (963) 738-19-10</a>
+            </li>
+            <li class="d-flex flex-column">
+                <span>Азовская, 4</span>
+                <a href="#">Парк «Юность»</a>
+            </li>
+            <li class="d-flex flex-column">
+                <span>Советская, 3</span>
+                <a href="#">г. Гурьевск</a>
+            </li>
+        </ul>
+        <ul class="links d-flex">
+            <li><a href="">Оферта</a></li>
+            <li><a href="">Политика конфиденциальности</a></li>
+            <li><a href="">Сведения об образовательной организации</a></li>
+        </ul>
+        <div class="footer-images">
+            <img class="blue-line" src="assets/images/footer-blue-line.svg" alt="">
+            <img class="ok-orange" src="assets/images/ok-orange.svg" alt="">
+            <img class="footer-d" src="assets/images/footer-d.svg" alt="">
+            <img class="pink-ellipse" src="assets/images/pink-ellipse.svg" alt="">
+            <img class="orange-star" src="assets/images/orange-star.svg" alt="">
+        </div>
+    </section>
+
 </div>
 </body>
 </html>

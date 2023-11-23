@@ -33,3 +33,20 @@
     }
   }
 }
+@media screen and (max-width: 767px) {
+  .principles {
+    .container {
+      border: none;
+    }
+    &-content {
+      flex-direction: column;
+    }
+    &-left {
+      border-right: none;
+      margin-bottom: 35px;
+    }
+    &-right {
+      padding: 0;
+    }
+  }
+}

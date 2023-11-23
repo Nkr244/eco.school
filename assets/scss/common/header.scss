@@ -10,3 +10,10 @@
     }
   }
 }
+@media screen and (max-width: 550px) {
+  .header {
+    .container {
+      flex-direction: column;
+    }
+  }
+}

@@ -38,3 +38,9 @@
     max-width: 375px;
   }
 }
+@media screen and (max-width: 767px) {
+    .check-list-content {
+      flex-direction: column;
+      gap: 0;
+    }
+}

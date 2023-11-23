@@ -1,9 +1,46 @@
 .gallery {
+  margin-bottom: 60px;
   &-content {
     flex-wrap: wrap;
     gap: 5px;
     img {
       flex-basis: calc(33.3333% - 5px);
+    }
+  }
+}
+@media screen and (max-width: 1450px) {
+  .gallery {
+    &-content {
+      img {
+        flex-basis: calc(50% - 5px)
+      }
+    }
+  }
+}
+@media screen and (max-width: 1076px) {
+  .gallery {
+    &-content {
+      img {
+        width: 325px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1076px) {
+  .gallery {
+    &-content {
+      img {
+        width: 200px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .gallery {
+    &-content {
+      img {
+        width: 100%;
+      }
     }
   }
 }

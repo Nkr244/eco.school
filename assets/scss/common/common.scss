@@ -8,7 +8,9 @@ body {
   font-family: "Gerbera", sans-serif;
   font-weight: 400;
 }
-
+.wrapper {
+  overflow: hidden;
+}
 .container {
   max-width: 1024px;
   margin: 0 auto;
@@ -25,33 +27,40 @@ body {
 .jc-sb {
   justify-content: space-between;
 }
+
 .flex-column {
   flex-direction: column;
 }
+
 img {
   width: 100%;
   object-fit: contain;
 }
+
 a {
   text-decoration: none;
 }
+
 h1, h3, h4 {
   font-family: Gosha, sans-serif;
   font-weight: bold;
   font-size: 42px;
   line-height: 46.2px;
 }
+
 h3 {
   font-size: 36px;
   line-height: 39.6px;
   font-weight: normal;
 }
+
 h4 {
   font-size: 16px;
   line-height: 17.6px;
   color: $green;
   font-weight: normal;
 }
+
 .btn {
   width: 100%;
   max-width: 200px;
@@ -61,4 +70,121 @@ h4 {
   font-size: 17px;
   line-height: 19.55px;
   font-family: Gosha, sans-serif;
+}
+
+.wrapper {
+}
+
+.container-abs {
+  position: relative;
+  width: 1076px;
+  margin: 0 auto;
+.lattice,
+  .female,
+  .female-left,
+  .female-right,
+  .five,
+  .ruler,
+  .D,
+  .loop,
+  .male,
+  .blue-star {
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    top: -22px;
+    left: 25px;
+    z-index: -1;
+  }
+
+  .ruler {
+    top: 52px;
+    left: -21%;
+    width: 350px;
+    height: 400px;
+  }
+
+  .D,
+  .male {
+    left: auto;
+    top: -43px;
+    right: 220px;
+    object-fit: cover;
+  }
+
+  .female,
+  .male {
+    width: 370px;
+    height: 333px;
+  }
+
+  .female {
+    top: 422px;
+    left: 650px;
+
+    &-right,
+    &-left {
+      width: 222px;
+      height: 150px;
+      z-index: -2;
+    }
+    &-left {
+      top: 575px;
+      left: 530px;
+    }
+
+    &-right {
+      top: 603px;
+      left: auto;
+      right: -60px;
+    }
+  }
+
+  .loop {
+    left: auto;
+    right: -195px;
+    top: -205px;
+    width: 750px;
+    height: 500px;
+  }
+
+  .D {
+    object-fit: contain;
+    top: 10px;
+    right: -270px;
+    width: 320px;
+    height: 375px;
+  }
+
+  .five {
+    width: 410px;
+    height: 522px;
+    top: 395px;
+    left: -31%;
+  }
+  .lattice {
+    z-index: -3;
+    top: 500px;
+    left: 400px;
+  }
+}
+@media screen and (max-width:1076px) {
+    .wrapper {
+      padding: 0 40px;
+      h1 {
+        font-size: 30px;
+      }
+      h2 {
+        font-size: 14px !important;
+        max-width: 620px;
+      }
+      h3 {
+        font-size: 24px;
+      }
+      .btn,
+      p {
+        font-size: 14px !important;
+      }
+    }
+
 }

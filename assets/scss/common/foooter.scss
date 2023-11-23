@@ -1,0 +1,73 @@
+.footer {
+  position: relative;
+  padding: 50px 0 35px 0;
+  font-size: 18px;
+  justify-content: center;
+  margin-bottom: 105px;
+  a {
+    color: $black;
+  }
+
+  .contacts {
+    gap: 40px;
+    margin-bottom: 55px;
+
+    span {
+      color: $gray-text;
+    }
+  }
+
+  .links {
+    gap: 60px;
+  }
+
+  .footer-logo {
+    max-width: 290px;
+    max-height: 38px;
+    margin-bottom: 60px;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  &-images {
+    img {
+      position: absolute;
+      max-height: 200px;
+      z-index: -1;
+    }
+
+    .blue-line {
+      top: 0;
+      left: 70px;
+      width: 200px;
+      height: 105px;
+    }
+
+    .ok-orange {
+      bottom: -105px;
+      left: 118px;
+      width: 45px;
+      height: 67px;
+    }
+    .footer-d {
+      bottom: 19px;
+      left: 382px;
+      width: 44px;
+      height: 52px;
+    }
+    .pink-ellipse {
+      bottom: 25px;
+      right: 279px;
+      width: 15px;
+      height: 15px;
+    }
+    .orange-star {
+      top: 0;
+      right: 145px;
+      width: 75px;
+      height: 75px;
+    }
+  }
+}

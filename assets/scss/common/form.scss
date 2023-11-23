@@ -1,0 +1,246 @@
+.form-sign-up {
+  font-size: 18px;
+  margin-bottom: 50px;
+
+  &-content {
+    max-width: 768px;
+    margin: 0 auto;
+
+    h3 {
+      margin-bottom: 15px;
+    }
+
+    .sub-title {
+      color: $gray-text;
+      margin-bottom: 30px;
+    }
+
+    .form-up {
+      margin-bottom: 35px;
+    }
+
+    .form-up,
+    .form-middle {
+      gap: 40px;
+    }
+
+    .form-middle {
+      margin-bottom: 30px;
+    }
+
+    .form-bottom {
+      .btn {
+        text-align: center;
+        background: $yellow;
+        letter-spacing: 2px;
+      }
+    }
+
+    .form-item {
+      p {
+        margin-bottom: 10px;
+      }
+
+      input[type="checkbox"],
+      input[type="radio"] {
+        display: none;
+      }
+
+      .checkbox-link {
+        max-width: 440px;
+        padding-left: 55px;
+        color: $gray-text;
+
+        a {
+          color: $gray-text;
+        }
+      }
+
+      input[type="checkbox"] + .form-checkbox {
+        cursor: pointer;
+        display: inline-block;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        width: 26px;
+        height: 26px;
+        position: absolute;
+      }
+
+      input[type="checkbox"]:checked + .form-checkbox {
+        position: absolute;
+        content: '';
+        background: url("images/ok.svg") no-repeat center;
+        width: 26px;
+        height: 26px;
+      }
+
+      /* Стили для кастомных радиокнопок */
+      input[type="tel"],
+      input[type="text"],
+      input[type="number"] + label,
+      input[type="radio"] + label {
+        padding: 15px 0;
+        font-size: 18px;
+        cursor: pointer;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        -webkit-appearance: none;
+      }
+
+      input[type="number"] + label {
+        padding: 0 40px;
+      }
+
+      input[type="text"],
+      input[type="tel"],
+      input[type="number"],
+      .title-radio {
+        text-wrap: nowrap;
+        max-width: 200px;
+        width: 200px;
+        height: 60px;
+        flex-basis: 50%;
+        text-align: center;
+      }
+
+      .number,
+      span {
+        position: absolute;
+        top: 53%;
+        right: 15px;
+      }
+
+      .tel {
+        right: auto;
+        left: 10px;
+        top: 54%;
+      }
+
+      .number {
+        top: 53%;
+        right: auto;
+        left: 10px;
+      }
+
+      input[type="number"] {
+        text-align: start;
+        padding: 0 55px 0 10px;
+        font-size: 18px;
+      }
+
+      input[type="text"],
+      input[type="tel"] {
+        text-align: start;
+        padding: 15px 30px;
+      }
+
+      input[type="tel"] {
+        max-width: 400px;
+        flex-basis: 100%;
+        width: 400px;
+      }
+
+      input[type="text"] {
+        padding-left: 15px;
+      }
+
+      label {
+        position: relative;
+      }
+
+      /* Стили при выборе радиокнопки */
+      input[type="radio"]:checked + label {
+        border-color: $black;
+      }
+
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1076px) {
+  .form-sign-up-content .form-item .tel {
+    top: 51%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .form-sign-up-content {
+    input {
+      max-width: 400px !important;
+      width: 100% !important;
+      flex-basis: 100% !important;
+    }
+
+    .form-up {
+      flex-direction: column;
+
+      .form-item {
+        &-content {
+          position: relative;
+          max-width: 470px;
+        }
+
+        span {
+          top: 17px;
+          right: 110px;
+        }
+        input[type="number"] {
+          padding: 0 0 0 10px;
+        }
+      }
+    }
+
+    .form-middle {
+      flex-direction: column;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .form-bottom {
+    .form-item {
+      flex-direction: column;
+      position: relative;
+
+      .checkbox-link {
+        margin-bottom: 20px;
+        padding-left: 40px;
+      }
+
+      .form-checkbox {
+        top: 5px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 550px) {
+  .header-contacts a {
+    color: $black;
+  }
+  .main {
+    margin-bottom: 50px;
+  }
+  .form-sign-up-content .form-up .form-item-content {
+    max-width: 400px;
+    span {
+      right: 15px;
+    }
+  }
+  .form-sign-up-content .form-item input[type=radio] + label {
+    font-size: 14px;
+  }
+  .form-sign-up-content .form-item .checkbox-link  {
+    font-size: 14px;
+  }
+  .wrapper {
+    h1 {
+      font-size: 24px;
+    }
+    h3 {
+      font-size: 20px;
+    }
+  }
+
+}
