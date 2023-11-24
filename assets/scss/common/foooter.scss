@@ -4,7 +4,8 @@
   font-size: 18px;
   justify-content: center;
   margin-bottom: 105px;
-
+  max-width: 1440px;
+  margin: 0 auto;
   a {
     color: $black;
   }
@@ -55,14 +56,14 @@
 
     .footer-d {
       bottom: 19px;
-      left: 382px;
+      left: 390px;
       width: 44px;
       height: 52px;
     }
 
     .pink-ellipse {
       bottom: 25px;
-      right: 279px;
+      right: 288px;
       width: 15px;
       height: 15px;
     }
@@ -101,18 +102,41 @@
         bottom: 0;
       }
       .footer-d {
-        bottom: 210px;
+        bottom: 250px;
+        left: 295px;
       }
       .pink-ellipse {
-        bottom: 150px;
-        right: 221px;
+        bottom: 230px;
+        right: 195px;
       }
     }
   }
 }
 @media screen and (max-width: 550px) {
-  .footer-links {
-    flex-direction: column;
-    font-size: 14px;
+  .footer {
+    &-links {
+      flex-direction: column;
+      font-size: 14px;
+    }
+    &-images {
+      .blue-line {
+        left: -80px;
+        top: 50px;
+      }
+      .orange-star {
+        right: 0;
+      }
+      .ok-orange {
+        left: 0;
+      }
+      .footer-d {
+        bottom: 110px;
+        left: 45px;
+      }
+      .pink-ellipse {
+        bottom: 20px;
+        right: 73px;
+      }
+    }
   }
 }

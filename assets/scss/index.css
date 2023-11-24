@@ -832,6 +832,8 @@ h4 {
   font-size: 18px;
   justify-content: center;
   margin-bottom: 105px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .footer a {
   color: #000000;
@@ -873,13 +875,13 @@ h4 {
 }
 .footer-images .footer-d {
   bottom: 19px;
-  left: 382px;
+  left: 390px;
   width: 44px;
   height: 52px;
 }
 .footer-images .pink-ellipse {
   bottom: 25px;
-  right: 279px;
+  right: 288px;
   width: 15px;
   height: 15px;
 }
@@ -915,17 +917,36 @@ h4 {
     bottom: 0;
   }
   .footer-images .footer-d {
-    bottom: 210px;
+    bottom: 250px;
+    left: 295px;
   }
   .footer-images .pink-ellipse {
-    bottom: 150px;
-    right: 221px;
+    bottom: 230px;
+    right: 195px;
   }
 }
 @media screen and (max-width: 550px) {
   .footer-links {
     flex-direction: column;
     font-size: 14px;
+  }
+  .footer-images .blue-line {
+    left: -80px;
+    top: 50px;
+  }
+  .footer-images .orange-star {
+    right: 0;
+  }
+  .footer-images .ok-orange {
+    left: 0;
+  }
+  .footer-images .footer-d {
+    bottom: 110px;
+    left: 45px;
+  }
+  .footer-images .pink-ellipse {
+    bottom: 20px;
+    right: 73px;
   }
 }
 
