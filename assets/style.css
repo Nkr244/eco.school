@@ -101,31 +101,39 @@ h4 {
 
 .container-abs {
   position: relative;
-  width: 1076px;
+  max-width: 1076px;
   margin: 0 auto;
 }
-.container-abs .lattice,
-.container-abs .female,
-.container-abs .female-left,
-.container-abs .female-right,
-.container-abs .five,
-.container-abs .ruler,
-.container-abs .D,
-.container-abs .loop,
-.container-abs .male,
-.container-abs .blue-star {
+.container-abs img.animate {
+  transform: translate(0, 0) rotate(0) scale(1);
+  opacity: 1;
+}
+.container-abs img {
   position: absolute;
+  z-index: -1;
+  width: 280px;
+  height: 280px;
+  transition: transform 0.7s, opacity 0.7s;
+}
+.container-abs .blue-star {
   width: 280px;
   height: 280px;
   top: -22px;
   left: 25px;
-  z-index: -1;
+  opacity: 0;
+  transform: translate(-110px, -250px) rotate(180deg) scale(0.5);
+}
+.container-abs .male {
+  opacity: 0;
+  transform: translate(150px, -210px) rotate(60deg) scale(0.5);
 }
 .container-abs .ruler {
   top: 52px;
-  left: -21%;
+  left: -210px;
   width: 350px;
   height: 400px;
+  opacity: 0;
+  transform: translate(-100px, 0px) rotate(50deg) scale(0.5);
 }
 .container-abs .D,
 .container-abs .male {
@@ -142,6 +150,8 @@ h4 {
 .container-abs .female {
   top: 422px;
   left: 650px;
+  opacity: 0;
+  transform: translate(50px, 100px) rotate(0deg) scale(0.5);
 }
 .container-abs .female-right, .container-abs .female-left {
   width: 222px;
@@ -151,11 +161,15 @@ h4 {
 .container-abs .female-left {
   top: 575px;
   left: 530px;
+  opacity: 0;
+  transform: translate(-100px, 100px) rotate(-60deg) scale(0.5);
 }
 .container-abs .female-right {
   top: 603px;
   left: auto;
   right: -60px;
+  opacity: 0;
+  transform: translate(100px, 100px) rotate(60deg) scale(0.5);
 }
 .container-abs .loop {
   left: auto;
@@ -163,6 +177,7 @@ h4 {
   top: -205px;
   width: 750px;
   height: 500px;
+  transform: translate(-100px, -210px) rotate(-35deg) scale(0.5);
 }
 .container-abs .D {
   object-fit: contain;
@@ -170,17 +185,23 @@ h4 {
   right: -270px;
   width: 320px;
   height: 375px;
+  opacity: 0;
+  transform: translate(100px, 0) rotate(35deg) scale(0.5);
 }
 .container-abs .five {
   width: 410px;
   height: 522px;
   top: 395px;
-  left: -31%;
+  left: -300px;
+  opacity: 0;
+  transform: translate(-100px, 210px) rotate(50deg) scale(0.5);
 }
 .container-abs .lattice {
   z-index: -3;
   top: 500px;
   left: 400px;
+  opacity: 0;
+  transform: translate(100px, -100px) rotate(0deg) scale(0.5);
 }
 
 @media screen and (max-width: 1076px) {
@@ -200,6 +221,51 @@ h4 {
   .wrapper .btn,
   .wrapper p {
     font-size: 14px !important;
+  }
+}
+@media screen and (max-width: 1076px) {
+  .container-abs .male,
+  .container-abs .female {
+    display: none;
+  }
+  .container-abs .male-left, .container-abs .male-right,
+  .container-abs .female-left,
+  .container-abs .female-right {
+    display: none;
+  }
+  .container-abs .loop,
+  .container-abs .lattice {
+    display: none;
+  }
+  .container-abs .D {
+    right: -140px !important;
+  }
+  .container-abs .five {
+    left: auto !important;
+    right: -200px !important;
+  }
+  .container-abs .ruler {
+    top: 500px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container-abs .blue-star {
+    width: 200px;
+    top: -60px;
+  }
+  .container-abs .D {
+    width: 210px;
+    right: -85px !important;
+  }
+  .container-abs .five {
+    left: auto !important;
+    right: -130px !important;
+    width: 260px;
+  }
+  .container-abs .ruler {
+    width: 280px;
+    top: 500px;
+    left: -100px;
   }
 }
 .header {

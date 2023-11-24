@@ -8,9 +8,11 @@ body {
   font-family: "Gerbera", sans-serif;
   font-weight: 400;
 }
+
 .wrapper {
   overflow: hidden;
 }
+
 .container {
   max-width: 1024px;
   margin: 0 auto;
@@ -77,31 +79,45 @@ h4 {
 
 .container-abs {
   position: relative;
-  width: 1076px;
+  max-width: 1076px;
   margin: 0 auto;
-.lattice,
-  .female,
-  .female-left,
-  .female-right,
-  .five,
-  .ruler,
-  .D,
-  .loop,
-  .male,
-  .blue-star {
+
+  img.animate {
+    transform: translate(0, 0) rotate(0) scale(1);
+    opacity: 1;
+  }
+
+  img {
     position: absolute;
+    z-index: -1;
+    width: 280px;
+    height: 280px;
+
+    transition: transform .7s, opacity .7s;
+  }
+
+  .blue-star {
     width: 280px;
     height: 280px;
     top: -22px;
     left: 25px;
-    z-index: -1;
+    opacity: 0;
+    transform: translate(-110px, -250px) rotate(180deg) scale(0.5);
+  }
+
+  .male {
+    opacity: 0;
+    transform: translate(150px, -210px) rotate(60deg) scale(0.5)
+
   }
 
   .ruler {
     top: 52px;
-    left: -21%;
+    left: -210px;
     width: 350px;
     height: 400px;
+    opacity: 0;
+    transform: translate(-100px, 0px) rotate(50deg) scale(0.5)
   }
 
   .D,
@@ -121,6 +137,8 @@ h4 {
   .female {
     top: 422px;
     left: 650px;
+    opacity: 0;
+    transform: translate(50px, 100px) rotate(0deg) scale(0.5);
 
     &-right,
     &-left {
@@ -128,15 +146,22 @@ h4 {
       height: 150px;
       z-index: -2;
     }
+
     &-left {
       top: 575px;
       left: 530px;
+      opacity: 0;
+      transform: translate(-100px, 100px) rotate(-60deg) scale(0.5);
+
     }
 
     &-right {
       top: 603px;
       left: auto;
       right: -60px;
+      opacity: 0;
+      transform: translate(100px, 100px) rotate(60deg) scale(0.5);
+
     }
   }
 
@@ -146,6 +171,7 @@ h4 {
     top: -205px;
     width: 750px;
     height: 500px;
+    transform: translate(-100px, -210px) rotate(-35deg) scale(0.5);
   }
 
   .D {
@@ -154,37 +180,98 @@ h4 {
     right: -270px;
     width: 320px;
     height: 375px;
+    opacity: 0;
+    transform: translate(100px, 0) rotate(35deg) scale(0.5);
   }
 
   .five {
     width: 410px;
     height: 522px;
     top: 395px;
-    left: -31%;
+    left: -300px;
+    opacity: 0;
+    transform: translate(-100px, 210px) rotate(50deg) scale(0.5);
+
   }
+
   .lattice {
     z-index: -3;
     top: 500px;
     left: 400px;
+    opacity: 0;
+    transform: translate(100px, -100px) rotate(0deg) scale(0.5);
   }
 }
-@media screen and (max-width:1076px) {
-    .wrapper {
-      padding: 0 40px;
-      h1 {
-        font-size: 30px;
-      }
-      h2 {
-        font-size: 14px !important;
-        max-width: 620px;
-      }
-      h3 {
-        font-size: 24px;
-      }
-      .btn,
-      p {
-        font-size: 14px !important;
-      }
+
+@media screen and (max-width: 1076px) {
+  .wrapper {
+    padding: 0 40px;
+
+    h1 {
+      font-size: 30px;
     }
 
+    h2 {
+      font-size: 14px !important;
+      max-width: 620px;
+    }
+
+    h3 {
+      font-size: 24px;
+    }
+
+    .btn,
+    p {
+      font-size: 14px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 1076px) {
+  .container-abs {
+    .male,
+    .female {
+      display: none;
+      &-left,
+      &-right {
+        display: none;
+      }
+    }
+    .loop,
+    .lattice {
+      display: none;
+    }
+    .D {
+      right: -140px !important;
+    }
+    .five {
+      left: auto !important;
+      right: -200px !important;
+    }
+    .ruler {
+      top: 500px;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .container-abs {
+    .blue-star {
+      width: 200px;
+      top: -60px;
+    }
+    .D {
+      width: 210px;
+      right: -85px !important;
+    }
+    .five {
+      left: auto !important;
+      right: -130px !important;
+      width: 260px;
+    }
+    .ruler {
+      width: 280px;
+      top: 500px;
+      left: -100px;
+    }
+  }
 }
